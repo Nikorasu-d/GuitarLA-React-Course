@@ -1,8 +1,18 @@
-# React + Vite
+# Guitar LA - #1 React Project
 
-HOLA MUNDO
+This static page was created as the first project on the Udemy course:
 
-Currently, two official plugins are available:
+["React y TypeScript - La Guía Completa Creando +10 Proyectos"](https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Used tools
+
+Now i will expose a list of the tools used in this project:
+
+-Visual Studio Code (Primary IDE)
+-[Project IDX (Secondary / commit IDE)](https://idx.google.com)
+-GIT / Github
+-[Vite JS (Server tool)](https://vitejs.dev/)
+-[Node JS)](https://www.nodejs.org/)
+-React
+-Javascript
+-[Render (Hosting Platform)](https://render.com/)

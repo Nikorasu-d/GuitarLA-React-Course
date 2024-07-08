@@ -22,3 +22,4 @@ Now i will expose a list of the tools used in this project:
 - React
 - Javascript
 - [Render (Hosting Platform)](https://render.com/)
+- Tailwind CSS (Style Framework)

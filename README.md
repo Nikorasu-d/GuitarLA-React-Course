@@ -1,10 +1,14 @@
-# See this site at [Render](https://react-project-avg3.onrender.com)
-
 # Guitar LA - #1 React Project
 
 This static page was created as the first project on the Udemy course:
 
 ["React y TypeScript - La Guía Completa Creando +10 Proyectos"](https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/)
+
+A deployed version of this site is live on render:
+
+[GuitarLA Site at Render](https://react-project-avg3.onrender.com)
+
+
 
 # Used tools
 

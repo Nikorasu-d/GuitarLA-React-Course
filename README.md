@@ -8,11 +8,11 @@ This static page was created as the first project on the Udemy course:
 
 Now i will expose a list of the tools used in this project:
 
--Visual Studio Code (Primary IDE)
--[Project IDX (Secondary / commit IDE)](https://idx.google.com)
--GIT / Github
--[Vite JS (Server tool)](https://vitejs.dev/)
--[Node JS)](https://www.nodejs.org/)
--React
--Javascript
--[Render (Hosting Platform)](https://render.com/)
+- Visual Studio Code (Primary IDE)
+- [Project IDX (Secondary / commit IDE)](https://idx.google.com)
+- GIT / Github
+- [Vite JS (Server tool)](https://vitejs.dev/)
+- [Node JS)](https://www.nodejs.org/)
+- React
+- Javascript
+- [Render (Hosting Platform)](https://render.com/)

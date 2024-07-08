@@ -1,6 +1,6 @@
 # React + Vite
 
-HOLA
+HOLA MUNDO
 
 Currently, two official plugins are available:
 

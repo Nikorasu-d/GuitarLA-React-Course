@@ -6,7 +6,7 @@ This static page was created as the first project on the Udemy course:
 
 A deployed version of this site is live on render:
 
-[GuitarLA Site at Render](https://react-project-avg3.onrender.com)
+[GuitarLA Site at Render](https://guitar-la-xi.vercel.app/)
 
 
 

@@ -1,35 +1,22 @@
+// Imports
 import { useState, useEffect } from "react"
-import Footer from "./components/footer"
-import Guitar from "./components/guitar"
-import Header from "./components/header"
-import { db } from "./data/db"
+import Footer from "./components/footer" // Footer Component
+import Guitar from "./components/guitar" // Guitar Component
+import Header from "./components/header" // Header Component
+import { db } from "./data/db" // local JSON db
 
-/**
-* Los componentes en React se definen de la siguiente manera:
-* 
-* function Nombre () {
-*  
-* Codigo JS o TS
-* 
-*  Return (
-*      <> 
-*      <h1 className="Tu clase" > Tu Codigo HTML mezclado con {variables JS o TS} </h1>
-*      </>
-*  )
-* }
-* 
-*/
+
 function App() {
-    //Los hooks van al inicio del codigo y nunca deben eliminarse o crearse, solo deben existir los mismos siempre
+
     
     const initializeCart = () => {
         const cart = localStorage.getItem("cart")
         return cart ? JSON.parse(cart) : []
-    }
+    } // Initialize Cart
 
+    //State Hooks
     const [cart, setCart] = useState(initializeCart())
-
-    const [guitarData, setGuitarData] = useState(db) //Se inicializa con la base de datos de las guitarras
+    const [guitarData, setGuitarData] = useState(db)
 
     
 
@@ -46,7 +33,6 @@ function App() {
             //En react los states son inmutables por lo tanto hay que evitar modificar directamente el state siempre
             const newCart = [...cart]
             newCart[itemExist].quantity++
-
             setCart(newCart)
 
         }
@@ -63,9 +49,8 @@ function App() {
     /**
      * useEffect() es un hook que se ejecuta siempre que termina de generarse el componente
      * 
-     * si al final del useEffect va vacio significa que el codigo se ejecutara solo una vez, en cambio si se pasan variables, se actualizaran cuando hayan cambios en los hooks
-     * 
-     * 
+     * si al final del useEffect va vacio significa que el codigo se ejecutara solo una vez, 
+     * en cambio si se pasan variables, se actualizaran cuando hayan cambios en los hooks
      */
 
     return (

@@ -21,5 +21,5 @@ Now i will expose a list of the tools used in this project:
 - [Node JS)](https://www.nodejs.org/)
 - React
 - Javascript
-- [Render (Hosting Platform)](https://render.com/)
+- [Vercel (Hosting Platform)](https://vercel.com/)
 - Tailwind CSS (Style Framework)

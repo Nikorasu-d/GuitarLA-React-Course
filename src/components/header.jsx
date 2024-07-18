@@ -1,50 +1,4 @@
-import { useMemo } from "react"
-
-export default function Header ({cart, setCart}) {
-    
-    //State derivado y useMemo para evitar que se ejecute la funcion si es que no hay cambios
-    const isEmpty = useMemo(() => cart.length === 0, [cart])
-    const cartTotal = useMemo(() => cart.reduce((total, actual) => total + (actual.price * actual.quantity), 0), [cart])
-
-
-    function decreaseQuantity(item){
-        const updatedCart = cart.map((e) => {
-            if(e.id === item.id && e.quantity > 1){
-                return {
-                    ...item,
-                    quantity: item.quantity - 1
-                }
-            }else{
-                return e
-            }
-        })
-        setCart(updatedCart)
-    }
-
-    function increaseQuantity(item){
-        const updatedCart = cart.map((e) => {
-            if(e.id === item.id && e.quantity < 5){
-                return {
-                    ...item,
-                    quantity: item.quantity + 1
-                }
-            }else{
-                return e
-            }
-        })
-
-        
-        setCart(updatedCart)
-    }
-
-    function removeItem(item){
-        setCart([...(cart.filter((e) => e.id !== item.id  ? item : null))])
-    }
-
-    function clearCart(){
-        const newCart = []
-        setCart(newCart)
-    }
+export default function Header ({cart,isEmpty,cartTotal, decreaseQuantity, increaseQuantity, removeFromCart, clearCart}) {
     
     
     return (
@@ -113,7 +67,7 @@ export default function Header ({cart, setCart}) {
                                                                     <button
                                                                         className="btn btn-danger"
                                                                         type="button"
-                                                                        onClick={()=> removeItem(item)}
+                                                                        onClick={()=> removeFromCart(item)}
                                                                     >
                                                                     X
                                                                     </button>
